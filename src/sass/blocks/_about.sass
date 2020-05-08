@@ -1,0 +1,62 @@
+.about
+    padding: 80px 0
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        &_bottom
+            margin-top: 37px
+    &__item
+        position: relative
+        width: 360px
+        height: 255px
+        border: 1.0px solid #ececec
+        img
+            width: 100%
+    &__descr
+        position: absolute
+        width: 265px
+        bottom: 36px
+        left: 50%
+        transform: translateX(-50%)
+        font-size: 18px
+        line-height: 26px
+        font-weight: 300
+        color: #393939
+        text-align: center
+        &_bottom
+            font-weight: 700
+    &__arrow
+        position: relative
+        width: 170px
+        height: 71px
+        margin: 0 auto
+        margin-top: 50px
+        span
+            &:nth-child(1)
+                &:before, &:after
+                    content: ""
+                    height: 3px 
+                    width: 50%
+                    position: absolute 
+                    top: 25px
+                    background: #ececec
+                &:before 
+                    left: 0
+                    transform: skew(0deg, 30deg)
+                &:after
+                    right: 0
+                    transform: skew(0deg, -30deg)
+            &:nth-child(2)
+                &:before, &:after
+                    content: ""
+                    height: 3px 
+                    width: 50%
+                    position: absolute 
+                    top: 45px
+                    background: #ececec
+                &:before 
+                    left: 0
+                    transform: skew(0deg, 30deg)
+                &:after
+                    right: 0
+                    transform: skew(0deg, -30deg)
